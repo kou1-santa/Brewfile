@@ -1,0 +1,36 @@
+@charset "utf-8";
+.hbox:after		{content: "";
+				display: block;
+				clear: both;}
+
+.topbox			{float: left;}
+
+.topimgbox		{float: left;}
+
+.mainbox		{float: left;}
+
+.menubox		{float: left;}
+
+body			{color: #000000;
+				 background-color: #ffffff;}
+
+a:link			{color: #ff6600;}
+a:visited		{color: #ffae88;}
+a:hover			{color: #ff0000;}
+a:active		{color: #ffff00;}
+
+
+.topbox h1		{background-color: orange;
+				text-decoration:none;}
+.topbox p		{margin: 0;}
+
+.mainbox ul		{margin-left: 50px;
+				padding: 0;
+				list-style: none;}
+
+.menubox ul		{margin: 0;
+				padding: 0;
+				list-style: none;}
+
+.maillink		{font-style: oblique;
+				text-decoration: underline;}
