@@ -9,6 +9,8 @@
 
 .mainbox		{float: left;}
 
+.mbrbox		{float: left;}
+
 .menubox		{float: left;}
 
 body			{color: #000000;
@@ -28,9 +30,31 @@ a:active		{color: #ffff00;}
 				padding: 0;
 				list-style: none;}
 
-.menubox ul		{margin: 0;
+.menubox ul		{margin: 0 0 0 10px;
 				padding: 0;
 				list-style: none;}
 
 .maillink		{font-style: oblique;
 				text-decoration: underline;}
+
+.mbrbox table 	{margin: 0 0 5px 0;
+				border-spacing: 1px;
+				border-collapse: separate;
+				padding: 1;
+				border: 1px #000000 solid;
+				table-layout: fixed;
+				width: 600px;}
+.mbrbox	th		{border-spacing: 1px;
+				border-collapse: separate;
+				padding: 1;
+				border: 1px #000000 solid;
+				width: 130px;}
+.sp				{border-spacing: 1px;
+				border-collapse: separate;
+				padding: 1;
+				border: 1px #000000 solid;
+				width: 150px;}
+.msg			{border-spacing: 1px;
+				border-collapse: separate;
+				padding: 1;
+				border: 1px #000000 solid;;}
