@@ -115,6 +115,6 @@ Public Sub TestGetMapImgFile()
     Else
         MsgBox "エラーが発生しました"
     End If
-
+//http://wtakemo.hatenablog.com/entry/2014/03/10/025526
 End Sub
 
