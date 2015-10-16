@@ -1,6 +1,6 @@
 email,メールアドレス,"charity-santa@example.com"
 name_kanji,氏名(漢字),"黒須三太"
-name_kana,氏名(フリガナ),""
+name_kana,氏名(フリガナ),"クロスサンタ"
 mobile_phone_number,携帯の電話番号,"080-1234-5678"
 kids_count,"子供の人数",1
 about_kids_1,お子様について(1人目),"名前: 太郎
