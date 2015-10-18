@@ -1,0 +1,52 @@
+http://libro.tuyano.com/index3?id=675001&page=2
+https://developers.google.com/apps-script/reference/document/document-app
+http://eye4brain.sakura.ne.jp/wp/blog/2015/03/03/google-apps-script%E3%81%A7%E5%B7%AE%E3%81%97%E8%BE%BC%E3%81%BF%E5%8D%B0%E5%88%B7%E7%9A%84%E3%81%AA%E4%BD%95%E3%81%8B/
+http://qiita.com/nurburg/items/744ec53477f4ae328555
+https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl=mailaddress
+http://eye4brain.sakura.ne.jp/wp/gasmemo/
+http://googlestyle.client.jp/document_services/class_listitem.html
+http://cs-dev.herokuapp.com/
+
+function Main() {
+  var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  var sheets = spreadsheet.getSheets();
+  var sheet;
+  for ( var i in sheets ){
+    if ( sheets[i].getSheetName() == "データ" ) {
+      sheet = sheets[i];
+      break;
+    }
+  }
+  //シートの最終行番号、最終列番号を取得
+  var startrow = 1;
+  var startcol = 1;
+  var lastrow = sheet.getLastRow();
+  var lastcol = sheet.getLastColumn();
+
+  var sheetdata = sheet.getSheetValues(startrow, startcol, lastrow, lastcol);
+  var newDocId = copyTemplateDoc(sheetdata[1][0],sheetdata[1][1]);
+  var newDoc = DocumentApp.openById(newDocId)
+  for( var j in sheetdata[0]) {
+    newDoc.replaceText(sheetdata[0][j], sheetdata[1][j]);
+  }
+  var url = "https://chart.googleapis.com/chart?chs=100x100&chld=Q&cht=qr&chl="+sheetdata[1][2];
+  var image = UrlFetchApp.fetch(url).getBlob();
+  newDoc.getBookmark('id.78lngi8fm5wq').getPosition().insertInlineImage(image);
+  url = "https://chart.googleapis.com/chart?chs=100x100&chld=Q&cht=qr&chl="+sheetdata[1][3];
+  image = UrlFetchApp.fetch(url).getBlob();
+  newDoc.getBookmark('id.78lngi8fm5wq').getPosition().insertInlineImage(image);
+  newDoc.getBookmark('id.78lngi8fm5wq').remove();
+
+}
+
+//テンプレートファイルを指定のフォルダにコピーする
+function copyTemplateDoc(id,name){
+  var Properties = PropertiesService.getScriptProperties();
+  var targetfolder = Properties.getProperty("folder");
+  var docname = id + "_" + name;
+
+  var folder = DriveApp.getFolderById('0B_4BuyYPBBzEdXVNQlViV1NmbWc');
+  var file = DriveApp.getFileById('1IRvAU4aTkY94v3ViPqIxOuQJvvJg76GW1RVqHB5yvZY');
+  var fileId = file.makeCopy(docname,folder).getId();
+  return fileId;
+}

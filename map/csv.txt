@@ -1,0 +1,31 @@
+email,メールアドレス,"charity-santa@example.com"
+name_kanji,氏名(漢字),"黒須三太"
+name_kana,氏名(フリガナ),"クロスサンタ"
+mobile_phone_number,携帯の電話番号,"080-1234-5678"
+kids_count,"子供の人数",1
+about_kids_1,お子様について(1人目),"名前: 太郎
+ナマエ:タロウ 
+年齢:5歳 
+性別:男 
+性格: 怖がり、いつもお母さんの後ろにいる
+サンタからのメッセージ: 友達を大事にしててえらいね。苦手なピーマン食べれるようになろうね"
+about_kids_2,お子様について(2人目),
+about_kids_3,お子様について(3人目),
+postal_code,郵便番号,"150-8010"
+prefecture,都道府県,"サンタ県"
+municipality,市区町村・番地,"サンタ市サンタ区サンタ町1-1"
+building,建物名,"サンタアパート203号"
+same_delivery_address,イブ当日のサンタクロースの訪問先,"上記住所と同じ,上記住所と異なる"
+delivery_postal_code,郵便番号(当日お届け先),"150-8010"
+delivery_prefecture,都道府県(当日お届け先),"サンタ県"
+delivery_municipality,市区町村・番地(当日お届け先),"サンタ市サンタ区サンタ町1-1"
+delivery_building,建物名(当日お届け先),"サンタアパート203号"
+delivery_station,最寄駅,"サンタ線ルドルフ駅"
+delivery_root,駅からの道のり,"駅西口からまっすぐ行って、サンタ信号を右折して、白いマンションの2階です"
+delivery_timing_first,お届け希望時間(第一希望),"19:00～20:00"
+delivery_timing_second,お届け希望時間(第二希望),"18:00～19:00"
+request_santa_sex,訪問するサンタの性別の希望について,"男性"
+participation_trigger,ご応募のきっかけ,"過去に参加したことがある"
+participation_trigger_detail,ご応募のきっかけ(自由記入欄),""
+message_to_santa,ご依頼主様からサンタクロースへのメッセージ,"運営サンタはイブ当日を楽しみにしていらっしゃる皆様のメッセージから元気を戴いております"
+free_text,"自由記入欄,質問や要望等ございましたらご自由にご記入ください。ご回答には少々お時間を頂戴するかと思いますが、予めご了承ください"
