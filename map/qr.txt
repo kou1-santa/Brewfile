@@ -1,8 +1,0 @@
-MEMORY:http://hanako.blog.so-net.ne.jp
-NAME1:山田花子㈱山田商会
-NAME2:ﾔﾏﾀﾞﾊﾅｺ
-TEL1:09012345678
-TEL2:0339876543
-MAIL1:hanako@docomo.ne.jp
-MAIL2:hanako@pcmail.ne.jp
-ADD:〒111-2222東京都千代田区丸の内1-1-1丸の内ビル101号
