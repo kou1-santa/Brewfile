@@ -7,11 +7,14 @@
 
 .topimgbox		{float: left;}
 
-.mainbox		{float: left;}
-
+.mainbox		{float: left;
+  				max-width: 600px;
+				}
 .mbrbox			{float: left;}
 
 .menubox		{float: left;}
+
+html			{ font-size: 1.2em; }
 
 body			{color: #000000;
 				 background-color: #ffffff;}
